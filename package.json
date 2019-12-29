@@ -1,0 +1,23 @@
+{
+  "name": "ecmascrolls",
+  "version": "0.0.0~pre-alpha",
+  "repository": "https://github.com/TamaHills/ecmascrolls.git",
+  "author": "Matt M <matt.d.m@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.1.7",
+    "parcel": "^2.0.0-alpha.3.2",
+    "sass": "^1.24.0",
+    "typescript": "^3.8.0-dev.20191228"
+  },
+  "dependencies": {
+    "htm": "^2.2.1",
+    "monaco-editor": "^0.19.0",
+    "preact": "^10.1.1"
+  },
+  "scripts": {
+    "start": "sh ./build_workers.sh && parcel src/index.html",
+    "build": "sh ./build_workers.sh && parcel build src/index.html",
+    "clean": "rm -rf .cache .parcel-cache dist"
+  }
+}
